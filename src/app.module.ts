@@ -13,10 +13,10 @@ import next from 'next';
 
 @Module({
   imports: [
-    // RenderModule.forRootAsync(next({ dev: false }), {
-    //   viewsDir: null,
-    //   passthrough404: true,
-    // }),
+    RenderModule.forRootAsync(next({ dev: false }), {
+      viewsDir: null,
+      passthrough404: true,
+    }),
     WebhookModule,
   ],
   controllers: [AppController],
